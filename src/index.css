@@ -1,0 +1,306 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+ul,li,h2,p {
+    margin: 0;
+    padding: 0;
+}
+
+.App {
+    min-height: 100vh;
+    background-color: #05292e;
+    gap: 30px;
+    background-image: url(./images/Rick-and-Morty.png);
+    background-size: 320px;
+    background-repeat: no-repeat;
+    background-position-x: center;
+    background-position-y: top;
+}
+
+.Father__dimension {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.search__container {
+    padding-top: 200px;
+    padding-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.search__input {
+    border: 0;
+    height: 35px;
+    width: 290px;
+    padding: 7px;
+    outline: none;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: whitesmoke;
+}
+
+.OnList{
+    border: 1 solid black;
+    background-color: whitesmoke;
+    max-height: 200px;
+    cursor: pointer;
+    overflow: auto;
+    border: 1px solid gray;
+    border-radius: 0px 0px 5px 5px;
+}
+
+.OffList {
+    display: none;
+}
+
+.search__suggestions {
+    list-style: none;
+    padding-left: 5px;
+    height: 25px;
+    display: flex;
+    align-items: center;
+}
+
+.search__suggestions:hover {
+    background-color: #062226;
+    color: white;
+}
+
+.location__container {
+    background-color: #062226;
+    color: whitesmoke;
+    width: 320px;
+    height: 130px;
+    padding-top: 10px; 
+    padding-bottom: 1px; 
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location__title {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+    padding-top: 10px;
+}
+
+.location__ul {
+    display: flex;
+    justify-content: center;
+}
+
+.location__list {
+    list-style: none;
+    padding-right: 10px;
+    text-align: center;
+    padding-left: 10px;
+}
+
+.location__bold {
+    font-weight: bold;
+    color: #4a5658;
+    display: flex;
+    flex-direction: column;
+}
+
+.Residents {
+    display: flex;
+    flex-wrap: wrap ;
+    gap: 30px;
+    justify-content: center;
+}
+
+.resident__container {
+    padding-bottom: 10px;
+    font-size: 18px;
+    background-color: #062226;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 270px;
+    box-shadow: 2px 2px 7px 0 #4a5658;
+}
+
+/* .resident__img {
+    
+} */
+
+.resident__title {
+    padding-left: 15px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    color: whitesmoke;
+}
+
+/* .resident__ul {
+
+} */
+
+.resident__list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 7px;
+    margin-left: 15px;
+    color: whitesmoke;
+}
+
+.resident__bold {
+    font-weight: bold;
+    color: #4a5658;
+}
+
+.pagination-container {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    width: max-content;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+.pagination-number-container{
+    display: flex;
+    gap: 5px;
+    list-style: none;
+}
+.pagination-prev-next{
+    font-size: 14px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #062226;
+    border-radius: 8px;
+}
+.page-number {
+    font-size: 25px;
+    color: whitesmoke;
+    cursor: pointer;
+    width: 30px;
+    aspect-ratio: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
+.page-active{
+    background-color: #062226;
+}
+
+@media screen and (min-width:767px) {
+    .App {
+        background-size: 768px;
+        padding-top: 300px;
+        background-position-y: -90px;
+    }
+    .search__container {
+        padding: 0;
+        margin: 0;
+        width: 700px;
+        height: 50px;
+        margin-bottom: 30px;
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .search__input{
+        width: 100%;
+        height: 100%;
+        font-size: 25px;
+        padding-left: 20px;
+    }
+    .search__suggestions{
+        padding-left: 20px;
+        font-size: 20px;
+        height: 32px;
+    }
+    .location__container {
+        width: 700px;
+        font-size: 22px;
+        height: 150px;
+    }
+    .location__ul{
+        gap: 35px;
+    }
+    .Residents {
+        max-width: 1440px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 40px;
+    }
+    .resident__container{
+        padding: 0;
+        margin: 0;
+    }
+    .pagination-container {
+        padding: 30px;
+    }
+    .pagination-prev-next {
+        width: 55px;
+        font-size: 25px;        
+    }
+    .page-number {
+        width: 55px;
+        font-size: 35px;
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .App {
+        background-image: url('./images/logo.jpg');
+        background-size: 100vw 72vh;  
+    }
+    .search__container {
+        width: 950px;
+    }
+    .OnList {
+        max-height: 300px;
+    }
+    .search__suggestions{
+        height: 35px;
+        font-size: 25px;
+    }
+    .location__container {
+        width: 950px;
+    }
+    .location__ul {
+        gap: 120px;
+    }
+}
+
+@media screen and (min-width:1440px) {
+    .App {
+        background-size: 100vw 65vh;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .App {
+        background-size: 100vw 67vh;
+    }
+    .search__container {
+        width: 1200px;
+        height: 60px;
+    }
+    .location__container {
+        width: 1200px;
+    }
+    .location__ul {
+        gap: 180px;
+    }
+} 
+
