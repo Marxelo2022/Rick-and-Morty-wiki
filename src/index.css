@@ -80,23 +80,21 @@ ul,li,h2,p {
     background-color: #062226;
     color: whitesmoke;
     width: 320px;
-    height: 130px;
-    padding-top: 10px; 
-    padding-bottom: 1px; 
+    height: 170px;
     margin-left: auto;
     margin-right: auto;
+    overflow: hidden;
 }
 
 .location__title {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding-bottom: 20px;
-    padding-top: 10px;
+    padding-top: 20px;
 }
 
 .location__ul {
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
 }
 
 .location__list {
@@ -165,8 +163,8 @@ ul,li,h2,p {
     align-items: center;
     width: max-content;
     margin: 0 auto;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 
 }
 .pagination-number-container{
@@ -276,9 +274,6 @@ ul,li,h2,p {
     }
     .location__container {
         width: 950px;
-    }
-    .location__ul {
-        gap: 120px;
     }
 }
 
